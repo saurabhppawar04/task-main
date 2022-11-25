@@ -11,7 +11,7 @@ function RightBody() {
         setoption(x)
     }
     return (
-        <div className="d-flex flex-column justify-content-between bg-dark text-light" style={{ width: '30%', border: '2px solid white', height: '100Vh' }}>
+        <div className="d-flex flex-column justify-content-between bg-dark text-light" style={{ width: '32%', border: '2px solid white', height: '100Vh' }}>
 
             {/* Petitioner */}
             <div className='d-flex flex-col justify-content-between my-2 px-3'  >
