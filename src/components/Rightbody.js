@@ -28,7 +28,7 @@ function RightBody() {
             <div class="collapse" id="collapseExample">
                 <span className='px-3' style={{ fontFamily: 'sans-serif', fontSize: '1.3rem' }}>1 <br /></span>
 
-                <div class="card card-body p-0 m-0" style={{ outline: "none" }}>
+                <div class="card card-body p-0 m-0 bg-dark text-light" style={{ outline: "none" }}>
 
                     <div className="mx-1 my-2" style={{ width: "max-width", height: '35%' }}>
                         <div className='d-flex justify-content-between flex-column'>
@@ -58,7 +58,7 @@ function RightBody() {
                 <div class="collapse" id="collapseExample1">
                     <span className='px-3' style={{ fontFamily: 'sans-serif', fontSize: '1.3rem' }}>1 <br /></span>
 
-                    <div class="card card-body p-0 m-0" style={{ outline: "none" }}>
+                    <div class="card card-body p-0 m-0 bg-dark text-light" style={{ outline: "none" }}>
 
                         <div className="mx-1 my-2" style={{ width: "max-width", height: '35%' }}>
                             <div className='d-flex justify-content-between flex-column'>
