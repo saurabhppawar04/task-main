@@ -3,7 +3,7 @@ import "../Styles/rightb.css"
 
 function RightBody() {
     return (
-        <div className="d-flex flex-column justify-content-between" style={{ width: '30%' }}>
+        <div className="d-flex flex-column justify-content-between bg-dark text-light" style={{ width: '30%', border:'2px solid white', height:'100vh'}}>
 
             {/* Petitioner */}
             <div className='d-flex flex-col justify-content-between my-2 px-3'  >
