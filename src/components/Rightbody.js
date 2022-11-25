@@ -1,9 +1,17 @@
 import React from 'react'
 import "../Styles/rightb.css"
 
+
+
 function RightBody() {
+
+    const [option, setoption] = React.useState('valid')
+
+    const handleChange=(x) =>{
+        setoption(x)
+    }
     return (
-        <div className="d-flex flex-column justify-content-between bg-dark text-light" style={{ width: '30%', border:'2px solid white', height:'100vh'}}>
+        <div className="d-flex flex-column justify-content-between bg-dark text-light" style={{ width: '30%', border: '2px solid white', height: '100Vh' }}>
 
             {/* Petitioner */}
             <div className='d-flex flex-col justify-content-between my-2 px-3'  >
@@ -66,10 +74,20 @@ function RightBody() {
                 </div>  </div>
             <div className="mx-1 my-12" style={{ width: "max-width", height: '30%' }}>
                 <div className='d-flex justify-content-center'>
-                 
+                    <label>
+                        <input type="radio" value='valid' onChange={()=>{handleChange('valid')}}checked={option==='valid'} />
+                        Valid
+                    </label>
+                    <label>
+                        <input type="radio" value='hold' onChange={()=>{handleChange('hold')}}checked={option==='hold'} />
+                        Hold
+                    </label><label>
+                        <input type="radio" value='junk' onChange={()=>{handleChange('junk')}}checked={option==='junk'} />
+                        Junk
+                    </label>
                 </div>
                 <div className='d-flex justify-content-center align-items-between'>
-                    <textarea style={{ width: '96%', height: "30%" }} rows={5}>
+                    <textarea style={{ width: '96%', height: "30%" }} rows={3}>
                     </textarea>
                 </div>
                 <div className='d-flex justify-content-center'>
